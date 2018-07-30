@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title></title>
+
+<link rel="stylesheet" type="text/css" href="lightbox.css">
+<link href="https://fonts.googleapis.com/css?family=BenchNine" rel="stylesheet">
+<script type="text/javascript" src="lightbox-plus-jquery.js"> </script>
+
+<style type="text/css"> 
+
+
+
+body{
+	background-color:lightblue;
+	font-family: 'BenchNine', sans-serif;
+	margin:0;
+   }
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    background-color:  #336699; 
+    overflow-x: hidden; 
+    padding-top: 200px;
+    transition: 0.5s; 
+	box-shadow: 10px 10px 152px -26px rgba(0,0,0,0.75);
+    text-transform:uppercase;
+}
+ 
+
+.sidenav a {
+    padding: 30px;
+    text-decoration: none;
+    font-size: 14px;
+    color:  #d9e6f2;
+    display: block;
+    transition: 0.3s;
+	font-family: 'BenchNine', sans-serif;
+	
+}
+ 
+
+.sidenav a:hover{
+	opacity:0.8;
+	font-size:16px;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 26px;
+    margin-left: 60px;
+	margin-top:-60px;
+}
+ 
+
+.topnav {
+    background-color: hsla(206, 45%, 44%, 0.74);
+    overflow: hidden;
+	width:65px;
+	height:750px;
+	opacity:0.8;
+	margin-top:-20px;
+	position:fixed;
+}
+ 
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+	margin-top:330px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+    overflow:hidden;
+    width:100%;
+}
+
+.pove{
+	height:600px;
+	width:1100px;
+	position:absolute;
+	left:15%;
+	top:5%;
+	background-color: white;
+	padding:30px;
+	columns:3;
+	text-align:justify;
+	font-size:18px;
+
+}
+
+.pove img{
+	width:150px;
+	border:10px solid lightblue;
+	margin-left:25%;
+}
+
+h1{
+	text-align:center;
+	color:  #336699;
+	font-weight:bold;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<div class="main">
+
+<embed name="myMusic" loop="true" hidden="true" src="morning.mp3"></embed>
+
+<div id="sideNavigation" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	<a href="album.html">Album</a>
+	<a href="motive.html">100 Motive</a>
+	<a href="about.html" >Despre Noi</a>
+</div>
+ 
+<nav class="topnav">
+  <a href="#" onclick="openNav()">
+    <svg width="30" height="30" id="icoOpen">
+        <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+        <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+        <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+    </svg>
+  </a>
+</nav>
+
+<div class="pove">
+
+<h1>Despre Noi</h1>
+<p>Stiu ca nu iti plac lucrurile siropoase, cum este site-ul asta, dar vreau sa il ai pentru a-l putea accesa oridecateori ai nevoie de o aducere aminte a tot ceea ce insemni pentru mine.</p>
+<p>Cand ne-am cunoscut prima data nu as fi crezut ca vom ajunge atat de departe.<br> Dar in primul moment in care te-am privit in ochi am avut senzatia
+ ca te cunosc deja de cateva secole cel putin.<br> Nu pot sa spun ca nu a fost putin infricosator, dar mi-am dat seama destul de repede de lucrurile pe care sunt in stare sa le fac pentru noi.</p>
+<p><img src="p1.jpg"></p><br>
+
+<p><img src="p3.jpg"></p><br><br>
+<p>Am avut parte de multe momente frumoase impreuna. M-ai facut mai fericita decat m-a putut face cineva vreodata.<br><br>
+ Au fost si momente grele, dar peste care am trecut fara ca iubirea noastra sa se stinga, ci dimpotriva, relatia noastra a devenit mai puternica cu trecerea timpului.<br><br>
+ Da, ne suparam unul pe altul, ne enervam, dar stim ca "<i>esti prost, dar esti prostul meu</i>" si "<i>esti tuta, dar esti tuta mea</i>". </p>
+
+<p>Cred ca impreuna facem o echipa care poate cladi lucruri extraordinare. Iar atunci cand sunt down, tu vei fi stalpul meu.
+ Si cand tu vei fi down, eu voi fi floarea de pe stalp, care te va ajuta sa vezi lucrurile mai frumoase.</p>
+<p>Vreau sa nu uiti ca indiferent de ce problema ai avea, eu sunt aici pentru a te asculta. Si promit sa nu te judec, sa incerc mereu sa-ti dau cel mai bun sfat
+ si sa fiu linistea de care ai nevoie.<br> Iti multumesc pentru toata sustinerea,iubirea si grija pe care mi-ai oferit-o in acesti ani.</p>
+<p>Stii,nu?</p><br><br>
+<p><img src="p2.png"></p>
+
+</div>
+
+</div>
+
+<script type="text/javascript">
+function openNav() {
+    document.getElementById("sideNavigation").style.width = "150px";
+    document.getElementById("main").style.marginLeft = "100px";
+}
+ 
+function closeNav() {
+    document.getElementById("sideNavigation").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+}
+
+</script>
+</body>
+</html>

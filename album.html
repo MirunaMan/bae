@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title></title>
+
+<link rel="stylesheet" type="text/css" href="lightbox.css">
+<link href="https://fonts.googleapis.com/css?family=BenchNine" rel="stylesheet">
+<script type="text/javascript" src="lightbox-plus-jquery.js"> </script>
+
+<style type="text/css"> 
+
+
+
+body{
+	background-color:lightblue;
+	font-family: 'BenchNine', sans-serif;
+	margin:0;
+   }
+
+
+
+
+.gallery{
+	margin-left:10%;
+	margin-top:-49%;
+
+}
+
+.gallery img{
+	width:150px;
+	height:200px;
+	padding:20px;
+	transition:1s;
+	display:inline;
+}
+
+
+
+.imageHolder {
+    position: relative;
+    width: 150px;
+    height: 175px;
+	display:inline;
+}
+.imageHolder .caption {
+    opacity: 0;
+    position: absolute;
+	height:60px;
+    width: 150px;
+    bottom: 20px;
+    left: 20px;
+    padding: 2px 0px;
+    color: black;
+    background: lightblue;
+    text-align: center;
+	font-size:15px;
+	font-weight:bold;
+}
+.imageHolder:hover .caption {
+    opacity: 0.7;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    background-color:  #336699; 
+    overflow-x: hidden; 
+    padding-top: 200px;
+    transition: 0.5s; 
+	box-shadow: 10px 10px 152px -26px rgba(0,0,0,0.75);
+    text-transform:uppercase;
+}
+ 
+
+.sidenav a {
+    padding: 30px;
+    text-decoration: none;
+    font-size: 14px;
+    color:  #d9e6f2;
+    display: block;
+    transition: 0.3s;
+	font-family: 'BenchNine', sans-serif;
+	
+}
+ 
+
+.sidenav a:hover{
+	opacity:0.8;
+	font-size:16px;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 26px;
+    margin-left: 60px;
+	margin-top:-60px;
+}
+ 
+
+.topnav {
+    background-color: hsla(206, 45%, 44%, 0.74);
+    overflow: hidden;
+	width:65px;
+	height:750px;
+	opacity:0.8;
+	margin-top:-20px;
+}
+ 
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+	margin-top:330px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+    overflow:hidden;
+    width:100%;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<div class="main">
+
+<embed name="myMusic" loop="true" hidden="true" src="deadpool.mp3"></embed>
+
+<div id="sideNavigation" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	<a href="album.html">Album</a>
+	<a href="motive.html">100 Motive</a>
+	<a href="about.html" >Despre Noi</a>
+</div>
+ 
+<nav class="topnav">
+  <a href="#" onclick="openNav()">
+    <svg width="30" height="30" id="icoOpen">
+        <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+        <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+        <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+    </svg>
+  </a>
+</nav>
+
+<div class="gallery">
+<div class="imageHolder">
+<a href="2.jpg" data-lightbox="mygallery"><img src="2.jpg"></a>
+<div class="caption"><br>Cand ti-ai dat seama ca imi placi</div>
+</div>
+
+<div class="imageHolder">
+<a href="3.jpg" data-lightbox="mygallery"><img src="3.jpg"></a>
+<div class="caption"><br>Am pastrat traditia</div>
+</div>
+
+<div class="imageHolder">
+<a href="6.jpg" data-lightbox="mygallery"><img src="6.jpg"></a>
+<div class="caption"><br>Printre primele dintre mii de kiss</div>
+</div>
+
+<div class="imageHolder">
+<a href="8.jpg" data-lightbox="mygallery"><img src="8.jpg"></a>
+<div class="caption"><br>Sealing it</div>
+</div>
+
+<div class="imageHolder">
+<a href="10.jpg" data-lightbox="mygallery"><img src="10.jpg"></a>
+<div class="caption"><br>Cel mai fain concert</div>
+</div>
+
+<div class="imageHolder">
+<a href="11.jpg" data-lightbox="mygallery"><img src="11.jpg"></a>
+<div class="caption"><br>Documentarea pozitiilor de somn</div>
+</div>
+
+<div class="imageHolder">
+<a href="12.jpg" data-lightbox="mygallery"><img src="12.jpg"></a>
+<div class="caption"><br>Dovada omletei</div>
+</div>
+
+<div class="imageHolder">
+<a href="14.jpg" data-lightbox="mygallery"><img src="14.jpg"></a>
+<div class="caption"><br>Cel mai dragut somn</div>
+</div>
+
+<div class="imageHolder">
+<a href="15.jpg" data-lightbox="mygallery"><img src="15.jpg"></a>
+<div class="caption"><br>Testand arme albe</div>
+</div>
+
+<div class="imageHolder">
+<a href="16.jpg" data-lightbox="mygallery"><img src="16.jpg"></a>
+<div class="caption"><br>Activitatea favorita</div>
+</div>
+
+<div class="imageHolder">
+<a href="17.jpg" data-lightbox="mygallery"><img src="17.jpg"></a>
+<div class="caption"><br>Cel mai simpatic iubit</div>
+</div>
+
+<div class="imageHolder">
+<a href="18.jpg" data-lightbox="mygallery"><img src="18.jpg"></a>
+<div class="caption"><br>Marea noastra placere</div>
+</div>
+
+<div class="imageHolder">
+<a href="19.jpg" data-lightbox="mygallery"><img src="19.jpg"></a>
+<div class="caption"><br>Brandul omniprezent</div>
+</div>
+
+<div class="imageHolder">
+<a href="20.jpg" data-lightbox="mygallery"><img src="20.jpg"></a>
+<div class="caption"><br>Cand l-ai cucerit pe Toto</div>
+</div>
+
+<div class="imageHolder">
+<a href="21.jpg" data-lightbox="mygallery"><img src="21.jpg"></a>
+<div class="caption"><br>Toto este cucerit</div>
+</div>
+
+<div class="imageHolder">
+<a href="23.jpg" data-lightbox="mygallery"><img src="23.jpg"></a>
+<div class="caption"><br>Revelion 2017</div>
+</div>
+
+<div class="imageHolder">
+<a href="24.jpg" data-lightbox="mygallery"><img src="24.jpg"></a>
+<div class="caption"><br>Sneaky bu</div>
+</div>
+
+<div class="imageHolder">
+<a href="25.jpg" data-lightbox="mygallery"><img src="25.jpg"></a>
+<div class="caption"><br>Sexy driving bu</div>
+</div>
+
+<div class="imageHolder">
+<a href="26.jpg" data-lightbox="mygallery"><img src="26.jpg"></a>
+<div class="caption"><br>Bear hug bu</div>
+</div>
+
+<div class="imageHolder">
+<a href="27.jpg" data-lightbox="mygallery"><img src="27.jpg"></a>
+<div class="caption"><br>Sexy driving bu part 2</div>
+</div>
+
+<div class="imageHolder">
+<a href="28.jpg" data-lightbox="mygallery"><img src="28.jpg"></a>
+<div class="caption"><br>Loving every bit of you.</div>
+</div>
+
+</div>
+</div>
+
+<script type="text/javascript">
+function openNav() {
+    document.getElementById("sideNavigation").style.width = "150px";
+    document.getElementById("main").style.marginLeft = "100px";
+}
+ 
+function closeNav() {
+    document.getElementById("sideNavigation").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+}
+
+</script>
+</body>
+</html>
